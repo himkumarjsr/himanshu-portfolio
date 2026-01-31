@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Kumar | Frontend Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+    body { background: #0f172a; color: #e5e7eb; line-height: 1.6; }
+
+    a { color: #38bdf8; text-decoration: none; }
+
+    header {
+      background: linear-gradient(135deg, #020617, #020617dd), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+      background-size: cover;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; color: #94a3b8; }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    section { padding: 70px 20px; max-width: 1100px; margin: auto; }
+
+    h2 { font-size: 2.2rem; margin-bottom: 30px; text-align: center; }
+
+    /* About */
+    .about { text-align: center; max-width: 800px; margin: auto; }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+      text-align: center;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
+    }
+
+    .project-card h3 { margin-bottom: 10px; }
+
+    /* Experience */
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      border-left: 3px solid #38bdf8;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+      background: #020617;
+      border-radius: 8px;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 18px;
+      border: 1px solid #38bdf8;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover { background: #38bdf8; color: #020617; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #020617;
+      color: #64748b;
+    }
+
+    @media(max-width:768px){
+      header h1{ font-size:2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Himanshu Kumar</h1>
+  <p>Senior Frontend Engineer | UI Architect | Product Engineer</p>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <p>
+      I am a Senior Frontend Engineer with 9+ years of experience building scalable,
+      high-performance web applications using React, Next.js, and TypeScript.
+      I specialize in UI architecture, accessibility, micro-frontends, and
+      enterprise-grade platforms.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill-card">React / Next.js</div>
+    <div class="skill-card">TypeScript / JavaScript</div>
+    <div class="skill-card">UI Architecture</div>
+    <div class="skill-card">Micro-Frontends</div>
+    <div class="skill-card">Performance Optimization</div>
+    <div class="skill-card">Accessibility (WCAG)</div>
+    <div class="skill-card">Jest / RTL</div>
+    <div class="skill-card">CI/CD / Git</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="projects">
+
+    <div class="project-card">
+      <h3>OCI Plugin Migration</h3>
+      <p>Migrated enterprise plugin to Redwood V3 with multi-realm deployment support.</p>
+      <p><strong>Tech:</strong> React, TypeScript, OCI</p>
+    </div>
+
+    <div class="project-card">
+      <h3>E-commerce Platform</h3>
+      <p>Built scalable Next.js SSR platform for US-based retail clients.</p>
+      <p><strong>Tech:</strong> Next.js, SCSS, REST APIs</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Trading Dashboard</h3>
+      <p>Developed high-performance dashboard for financial services.</p>
+      <p><strong>Tech:</strong> React, Chart.js</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>Oracle — Senior Member of Technical Staff</h3>
+      <p>2025 – Present</p>
+      <ul>
+        <li>Led migration of Zero Trust Packet Routing plugin from Loom to Redwood V3.</li>
+        <li>Designed scalable UI architecture for multi-realm OCI deployments.</li>
+        <li>Created deployment workflows and documentation to reduce operational risk.</li>
+        <li>Implemented unit and E2E testing for production stability.</li>
+        <li>Supported accessibility (VPAT) and security compliance.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Publicis Sapient — Senior Associate Technology</h3>
+      <p>2021 – 2025</p>
+      <ul>
+        <li>Led frontend development for enterprise e-commerce platforms.</li>
+        <li>Implemented micro-frontend architecture for scalable systems.</li>
+        <li>Built SEO-optimized Next.js applications using SSR and App Router.</li>
+        <li>Introduced design systems and reusable UI components.</li>
+        <li>Mentored engineers and improved team productivity.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Edelweiss — Senior Frontend Developer</h3>
+      <p>2020 – 2021</p>
+      <ul>
+        <li>Led end-to-end development of digital trading platforms.</li>
+        <li>Built reusable components and dashboards using Chart.js.</li>
+        <li>Managed code reviews, releases, and deployments.</li>
+        <li>Improved UI performance and accessibility.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Oodleshop — Founder & Product Engineer</h3>
+      <p>2019 – 2020</p>
+      <ul>
+        <li>Founded and scaled an e-commerce platform for Tier-2 cities.</li>
+        <li>Led frontend architecture and product development.</li>
+        <li>Built real-time messaging and notification systems.</li>
+        <li>Managed engineering and business operations.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Infosys — System Engineer</h3>
+      <p>2017 – 2018</p>
+      <ul>
+        <li>Developed enterprise dashboards for VISA systems.</li>
+        <li>Built SPAs using React and Redux.</li>
+        <li>Implemented data visualization and WCAG compliance.</li>
+        <li>Improved performance and maintainability.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact">
+    <a href="mailto:himkumarjsr@gmail.com">Email</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Himanshu Kumar | Frontend Engineer</p>
+</footer>
+
+</body>
+</html>
